@@ -1,21 +1,5 @@
 <?php
-$part1 = 'http://';
-$part2 = 'https';
-$sub1 = 'member';
-$sub2 = 'login';
-$sub3 = 'online';
-$sub4 = 'www';
-$sub5 = 'account';
-$sub6 = 'connect';
-$spoof = 'cibc';  //CHANGE THIS TO SPOOFED DOMAIN
-$spoof2 = 'com';  //CHANGE THIS TO SPOOFED ZONE
-$domain = 'google.com';  //CHANGE THIS TO FINAL DOMAIN
-$seperator = '/';
-$seperator2 = '.';
-$rand1 = mt_rand(10000000000000000, 20000000000000000);
-$rand2 = array($sub1, $sub2, $sub3, $sub4, $sub5, $sub6);
-$rand3 = $rand2[array_rand($rand2)];
-$builded = $part1 . $sub4 . $seperator2 . $part2 . $seperator2 . $spoof . $seperator2 . $spoof2 . $seperator2 . $spoof . $seperator2 . $spoof2 . $seperator2 . $spoof . $seperator2 . $spoof2 . $seperator2 . $spoof . $seperator2 . $spoof2 . $seperator2 . $spoof . $seperator2 . $spoof2 . $seperator2 . $spoof . $seperator2 . $spoof2 . $seperator2 . $spoof . $seperator2 . $spoof2 . $seperator2 . $spoof . $seperator2 . $spoof2 . $seperator2 . $domain . $seperator . $rand1;
+$domain = 'google.com';
 header("Location: $domain");
 die();
 ?>
